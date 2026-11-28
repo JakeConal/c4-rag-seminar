@@ -1,0 +1,216 @@
+{
+  "fixture_only": false,
+  "pilot": true,
+  "run_count": 1,
+  "runs": [
+    {
+      "baseline": {
+        "recall_at_5": 0.6,
+        "mrr_at_5": 0.52,
+        "p50_ms": 24.6019995,
+        "p95_ms": 112.88240349999998
+      },
+      "reranked": {
+        "recall_at_5": 0.6,
+        "mrr_at_5": 0.475,
+        "p50_ms": 1412.4845085,
+        "p95_ms": 1618.6899177999999
+      },
+      "added_latency": {
+        "p50_ms": 1362.3785709999997,
+        "p95_ms": 1545.0585409999999
+      },
+      "quality_delta": {
+        "mrr_at_5": -0.045,
+        "recall_at_5": 0.0
+      },
+      "mrr_at_5_query_counts": {
+        "improved": 1,
+        "tied": 6,
+        "worsened": 3
+      },
+      "recall_at_5_query_counts": {
+        "improved": 1,
+        "tied": 8,
+        "worsened": 1
+      },
+      "candidate_pool": {
+        "oracle_recall_at_5": 0.9,
+        "queries_with_no_positive": 1,
+        "mean_distinct_parents": 33.2,
+        "queries_below_five_parents": 0
+      }
+    }
+  ],
+  "across_runs": {
+    "baseline": {
+      "recall_at_5": {
+        "median": 0.6,
+        "min": 0.6,
+        "max": 0.6,
+        "q25": 0.6,
+        "q75": 0.6
+      },
+      "mrr_at_5": {
+        "median": 0.52,
+        "min": 0.52,
+        "max": 0.52,
+        "q25": 0.52,
+        "q75": 0.52
+      },
+      "p50_ms": {
+        "median": 24.6019995,
+        "min": 24.6019995,
+        "max": 24.6019995,
+        "q25": 24.6019995,
+        "q75": 24.6019995
+      },
+      "p95_ms": {
+        "median": 112.88240349999998,
+        "min": 112.88240349999998,
+        "max": 112.88240349999998,
+        "q25": 112.88240349999998,
+        "q75": 112.88240349999998
+      }
+    },
+    "reranked": {
+      "recall_at_5": {
+        "median": 0.6,
+        "min": 0.6,
+        "max": 0.6,
+        "q25": 0.6,
+        "q75": 0.6
+      },
+      "mrr_at_5": {
+        "median": 0.475,
+        "min": 0.475,
+        "max": 0.475,
+        "q25": 0.475,
+        "q75": 0.475
+      },
+      "p50_ms": {
+        "median": 1412.4845085,
+        "min": 1412.4845085,
+        "max": 1412.4845085,
+        "q25": 1412.4845085,
+        "q75": 1412.4845085
+      },
+      "p95_ms": {
+        "median": 1618.6899177999999,
+        "min": 1618.6899177999999,
+        "max": 1618.6899177999999,
+        "q25": 1618.6899177999999,
+        "q75": 1618.6899177999999
+      }
+    },
+    "added_latency": {
+      "p50_ms": {
+        "median": 1362.3785709999997,
+        "min": 1362.3785709999997,
+        "max": 1362.3785709999997,
+        "q25": 1362.3785709999997,
+        "q75": 1362.3785709999997
+      },
+      "p95_ms": {
+        "median": 1545.0585409999999,
+        "min": 1545.0585409999999,
+        "max": 1545.0585409999999,
+        "q25": 1545.0585409999999,
+        "q75": 1545.0585409999999
+      }
+    },
+    "quality_delta": {
+      "mrr_at_5": {
+        "median": -0.045,
+        "min": -0.045,
+        "max": -0.045,
+        "q25": -0.045,
+        "q75": -0.045
+      },
+      "recall_at_5": {
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "q25": 0.0,
+        "q75": 0.0
+      }
+    },
+    "mrr_at_5_query_counts": {
+      "improved": {
+        "median": 1,
+        "min": 1,
+        "max": 1,
+        "q25": 1.0,
+        "q75": 1.0
+      },
+      "tied": {
+        "median": 6,
+        "min": 6,
+        "max": 6,
+        "q25": 6.0,
+        "q75": 6.0
+      },
+      "worsened": {
+        "median": 3,
+        "min": 3,
+        "max": 3,
+        "q25": 3.0,
+        "q75": 3.0
+      }
+    },
+    "recall_at_5_query_counts": {
+      "improved": {
+        "median": 1,
+        "min": 1,
+        "max": 1,
+        "q25": 1.0,
+        "q75": 1.0
+      },
+      "tied": {
+        "median": 8,
+        "min": 8,
+        "max": 8,
+        "q25": 8.0,
+        "q75": 8.0
+      },
+      "worsened": {
+        "median": 1,
+        "min": 1,
+        "max": 1,
+        "q25": 1.0,
+        "q75": 1.0
+      }
+    },
+    "candidate_pool": {
+      "oracle_recall_at_5": {
+        "median": 0.9,
+        "min": 0.9,
+        "max": 0.9,
+        "q25": 0.9,
+        "q75": 0.9
+      },
+      "queries_with_no_positive": {
+        "median": 1,
+        "min": 1,
+        "max": 1,
+        "q25": 1.0,
+        "q75": 1.0
+      },
+      "mean_distinct_parents": {
+        "median": 33.2,
+        "min": 33.2,
+        "max": 33.2,
+        "q25": 33.2,
+        "q75": 33.2
+      },
+      "queries_below_five_parents": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "q25": 0.0,
+        "q75": 0.0
+      }
+    }
+  },
+  "note": "Timing quantiles use saved per-query latencies. Added latency is paired within each query and run."
+}

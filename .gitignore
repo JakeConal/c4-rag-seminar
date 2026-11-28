@@ -1,0 +1,8 @@
+.venv/
+.cache/
+data/
+__pycache__/
+*.pyc
+.env
+dist/
+results/smoke/

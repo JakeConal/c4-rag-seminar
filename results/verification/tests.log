@@ -1,0 +1,22 @@
+python3 -m unittest discover -s tests -v
+test_chunk_coverage_without_redundant_tail (test_metrics.MetricsTest.test_chunk_coverage_without_redundant_tail) ... ok
+test_collapse_parent_before_metric (test_metrics.MetricsTest.test_collapse_parent_before_metric) ... ok
+test_paired_latency_is_not_difference_of_percentiles (test_metrics.MetricsTest.test_paired_latency_is_not_difference_of_percentiles) ... ok
+test_rank_cutoff_and_missing_hits (test_metrics.MetricsTest.test_rank_cutoff_and_missing_hits) ... ok
+test_recall_denominator_is_all_relevant_docs (test_metrics.MetricsTest.test_recall_denominator_is_all_relevant_docs) ... ok
+test_chunk_comparison_uses_same_parent_labels_and_one_query_once (test_replay.ReplayTest.test_chunk_comparison_uses_same_parent_labels_and_one_query_once) ... ok
+test_impossible_time_and_nonfinite_score_are_rejected (test_replay.ReplayTest.test_impossible_time_and_nonfinite_score_are_rejected) ... ok
+test_pools_must_match_even_when_parent_rankings_do (test_replay.ReplayTest.test_pools_must_match_even_when_parent_rankings_do) ... ok
+test_real_log_reconstructs_stable_ties_and_parent_collapse (test_replay.ReplayTest.test_real_log_reconstructs_stable_ties_and_parent_collapse) ... ok
+test_replay_rejects_changed_judgments (test_replay.ReplayTest.test_replay_rejects_changed_judgments) ... ok
+test_replay_rejects_missing_run (test_replay.ReplayTest.test_replay_rejects_missing_run) ... ok
+test_wrong_reranked_document_order_is_rejected (test_replay.ReplayTest.test_wrong_reranked_document_order_is_rejected) ... ok
+test_assessment_needs_labeled_team_and_two_written_reflections (test_submission.SubmissionTest.test_assessment_needs_labeled_team_and_two_written_reflections) ... ok
+test_assessment_requires_six_bounded_scores_and_matching_sum (test_submission.SubmissionTest.test_assessment_requires_six_bounded_scores_and_matching_sum) ... ok
+test_check_replays_raw_logs_and_leaves_saved_summary_untouched (test_submission.SubmissionTest.test_check_replays_raw_logs_and_leaves_saved_summary_untouched) ... ok
+test_requires_labeled_recording_url (test_submission.SubmissionTest.test_requires_labeled_recording_url) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 0.075s
+
+OK

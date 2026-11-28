@@ -1,0 +1,113 @@
+{
+  "config": {
+    "seed": 42,
+    "runs": 5,
+    "threads": 4,
+    "batch_size": 16,
+    "candidate_k": 50,
+    "output_k": 5,
+    "chunk_tokens": 192,
+    "chunk_overlap": 32,
+    "embedding": {
+      "id": "sentence-transformers/all-MiniLM-L6-v2",
+      "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41"
+    },
+    "reranker": {
+      "id": "cross-encoder/ms-marco-MiniLM-L6-v2",
+      "revision": "233902d25c440f23af6f7d6e94d2946bac0bee0a"
+    },
+    "dataset": {
+      "id": "BeIR/scifact",
+      "revision": "b3b5335604bf5ee3c4447671af975ea25143d4f5",
+      "qrels_id": "BeIR/scifact-qrels",
+      "qrels_revision": "2938d17dc3b09882fdb8c12bbbe2e2dc0e75a029"
+    }
+  },
+  "data": {
+    "config": {
+      "seed": 42,
+      "runs": 5,
+      "threads": 4,
+      "batch_size": 16,
+      "candidate_k": 50,
+      "output_k": 5,
+      "chunk_tokens": 192,
+      "chunk_overlap": 32,
+      "embedding": {
+        "id": "sentence-transformers/all-MiniLM-L6-v2",
+        "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41"
+      },
+      "reranker": {
+        "id": "cross-encoder/ms-marco-MiniLM-L6-v2",
+        "revision": "233902d25c440f23af6f7d6e94d2946bac0bee0a"
+      },
+      "dataset": {
+        "id": "BeIR/scifact",
+        "revision": "b3b5335604bf5ee3c4447671af975ea25143d4f5",
+        "qrels_id": "BeIR/scifact-qrels",
+        "qrels_revision": "2938d17dc3b09882fdb8c12bbbe2e2dc0e75a029"
+      }
+    },
+    "source_sha256": {
+      "corpus/corpus-00000-of-00001.parquet": "243324b35f03d82bd6d98a5f575966876e86cad7ce16e5333a35b1b793dc4f45",
+      "queries/queries-00000-of-00001.parquet": "1c37956c5dc8b810b60302323c24d1a9e79e26411ba8f5ad9d0888642e2a9034",
+      "test.tsv": "0864bb985e0ca2367ba217977e72004d549054b2b06666ed9d4825ac7c21284c"
+    },
+    "model_sha256": {
+      "embedding": {
+        "config.json": "953f9c0d463486b10a6871cc2fd59f223b2c70184f49815e7efbcab5d8908b41",
+        "model.safetensors": "53aa51172d142c89d9012cce15ae4d6cc0ca6895895114379cacb4fab128d9db",
+        "special_tokens_map.json": "303df45a03609e4ead04bc3dc1536d0ab19b5358db685b6f3da123d05ec200e3",
+        "tokenizer.json": "be50c3628f2bf5bb5e3a7f17b1f74611b2561a3a27eeab05e5aa30f411572037",
+        "tokenizer_config.json": "acb92769e8195aabd29b7b2137a9e6d6e25c476a4f15aa4355c233426c61576b",
+        "vocab.txt": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3",
+        "1_Pooling/config.json": "4be450dde3b0273bb9787637cfbd28fe04a7ba6ab9d36ac48e92b11e350ffc23",
+        "config_sentence_transformers.json": "061ca9d39661d6c6d6de5ba27f79a1cd5770ea247f8d46412a68a498dc5ac9f3",
+        "modules.json": "84e40c8e006c9b1d6c122e02cba9b02458120b5fb0c87b746c41e0207cf642cf",
+        "sentence_bert_config.json": "fc1993fde0a95c24ec6c022539d41cf6e2f7c9721e5415d6fb6897472a9cd4b7"
+      },
+      "reranker": {
+        "config.json": "380e02c93f431831be65d99a4e7e5f67c133985bf2e77d9d4eba46847190bacc",
+        "model.safetensors": "821d1aa69520101d6e0737f78a042ae25b19e5cb9160701909d10434f4aeb0ae",
+        "special_tokens_map.json": "3c3507f36dff57bce437223db3b3081d1e2b52ec3e56ee55438193ecb2c94dd6",
+        "tokenizer.json": "d241a60d5e8f04cc1b2b3e9ef7a4921b27bf526d9f6050ab90f9267a1f9e5c66",
+        "tokenizer_config.json": "a5c2e5a7b1a29a0702cd28c08a399b5ecc110c263009d17f7e3b415f25905fd8",
+        "vocab.txt": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3"
+      }
+    },
+    "prepared_sha256": "e03460dc22c768f7e2be4c545f5ec13ee3585b884a1aa8ad55da7fb56f38d231",
+    "documents": 5183,
+    "chunks": 12434,
+    "queries": 300
+  },
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "cpu": "11th Gen Intel(R) Core(TM) i5-11400H @ 2.70GHz",
+  "logical_cpus": 4,
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "packages": {
+    "numpy": "2.2.6",
+    "torch": "2.8.0+cpu",
+    "sentence-transformers": "5.1.2",
+    "transformers": "4.57.1",
+    "huggingface-hub": "0.36.0",
+    "pyarrow": "21.0.0"
+  },
+  "git_commit": "a3d85f55dfbc3929807b70b7c34d0e8d42a9693c",
+  "source_sha256": {
+    "ragstudy/measure.py": "622f6667e4ab3c77b377d69b57dece35c600b15e19b24102b4f4cbe2c0f4de5f",
+    "ragstudy/common.py": "e6b1a0b713945a7b1b601b7f2c3ad76fe19e0e5db497003a0cdb0ba064a56bcc",
+    "ragstudy/prepare.py": "6d6bc4ce8413a6ee0709994894e5f96af7b9503b5f1228de02c0b43f51c4c16c"
+  },
+  "device": "cpu",
+  "index_build_ms": 353385.57173599995,
+  "index_dtype": "float32",
+  "index_shape": [
+    12434,
+    384
+  ],
+  "index_bytes": 19098624,
+  "warmup_queries": 3,
+  "pilot": false,
+  "query_count": 300,
+  "run_count": 5
+}

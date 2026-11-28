@@ -1,0 +1,40 @@
+{
+  "query_count": 300,
+  "overlap_tokens": 32,
+  "baseline": {
+    "window_tokens": 192,
+    "chunks": 12434,
+    "index_bytes": 19098624,
+    "recall_at_5": 0.7307222222222223,
+    "mrr_at_5": 0.6105,
+    "pool_recall": 0.8863333333333333
+  },
+  "alternative": {
+    "window_tokens": 96,
+    "chunks": 27090,
+    "index_bytes": 41610240,
+    "recall_at_5": 0.7447222222222222,
+    "mrr_at_5": 0.6177777777777778,
+    "pool_recall": 0.897
+  },
+  "paired_changes": {
+    "recall_at_5": {
+      "mean": 0.014,
+      "improved": 18,
+      "tied": 271,
+      "worsened": 11
+    },
+    "mrr_at_5": {
+      "mean": 0.007277777777777778,
+      "improved": 39,
+      "tied": 221,
+      "worsened": 40
+    },
+    "pool_recall": {
+      "mean": 0.010666666666666666,
+      "improved": 7,
+      "tied": 290,
+      "worsened": 3
+    }
+  }
+}

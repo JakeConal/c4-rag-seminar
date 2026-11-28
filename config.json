@@ -1,0 +1,24 @@
+{
+  "seed": 42,
+  "runs": 5,
+  "threads": 4,
+  "batch_size": 16,
+  "candidate_k": 50,
+  "output_k": 5,
+  "chunk_tokens": 192,
+  "chunk_overlap": 32,
+  "embedding": {
+    "id": "sentence-transformers/all-MiniLM-L6-v2",
+    "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41"
+  },
+  "reranker": {
+    "id": "cross-encoder/ms-marco-MiniLM-L6-v2",
+    "revision": "233902d25c440f23af6f7d6e94d2946bac0bee0a"
+  },
+  "dataset": {
+    "id": "BeIR/scifact",
+    "revision": "b3b5335604bf5ee3c4447671af975ea25143d4f5",
+    "qrels_id": "BeIR/scifact-qrels",
+    "qrels_revision": "2938d17dc3b09882fdb8c12bbbe2e2dc0e75a029"
+  }
+}

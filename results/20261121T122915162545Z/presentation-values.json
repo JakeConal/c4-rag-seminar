@@ -1,0 +1,178 @@
+{
+  "note": "Display rounding only. Source files are relative to this result directory.",
+  "sources": {
+    "setup": "environment.json",
+    "pass_statistics": "summary.json",
+    "raw_runs": [
+      "run-01.json",
+      "run-02.json",
+      "run-03.json",
+      "run-04.json",
+      "run-05.json"
+    ],
+    "chunk_to_parent_mapping": "chunk-map.json",
+    "chunk_comparison": "chunk-ablation/summary.json"
+  },
+  "study": {
+    "documents": 5183,
+    "chunks": 12434,
+    "claims_per_pass": 300,
+    "passes": 5,
+    "paired_query_observations": 1500,
+    "embedding_matrix_mib": "18.21",
+    "index_build_seconds": "353.4"
+  },
+  "quality": {
+    "baseline": {
+      "mrr_at_5": {
+        "median": "61.05%",
+        "min": "61.05%",
+        "max": "61.05%"
+      },
+      "recall_at_5": {
+        "median": "73.07%",
+        "min": "73.07%",
+        "max": "73.07%"
+      }
+    },
+    "reranked": {
+      "mrr_at_5": {
+        "median": "67.20%",
+        "min": "67.20%",
+        "max": "67.20%"
+      },
+      "recall_at_5": {
+        "median": "77.72%",
+        "min": "77.72%",
+        "max": "77.72%"
+      }
+    },
+    "percentage_point_change": {
+      "mrr_at_5": {
+        "median": "+6.15 pp",
+        "min": "+6.15 pp",
+        "max": "+6.15 pp"
+      },
+      "recall_at_5": {
+        "median": "+4.64 pp",
+        "min": "+4.64 pp",
+        "max": "+4.64 pp"
+      }
+    }
+  },
+  "latency_ms": {
+    "baseline": {
+      "p50_ms": {
+        "median": "27.6",
+        "min": "26.2",
+        "max": "33.1"
+      },
+      "p95_ms": {
+        "median": "115.7",
+        "min": "115.4",
+        "max": "116.0"
+      }
+    },
+    "reranked": {
+      "p50_ms": {
+        "median": "1554.4",
+        "min": "1518.9",
+        "max": "1687.2"
+      },
+      "p95_ms": {
+        "median": "2001.0",
+        "min": "1725.6",
+        "max": "2109.7"
+      }
+    },
+    "paired_added": {
+      "p50_ms": {
+        "median": "+1511.0",
+        "min": "+1469.5",
+        "max": "+1636.7"
+      },
+      "p95_ms": {
+        "median": "+1928.3",
+        "min": "+1649.7",
+        "max": "+2049.4"
+      }
+    }
+  },
+  "first_pass": {
+    "mrr_at_5_query_counts": {
+      "improved": 67,
+      "tied": 193,
+      "worsened": 40
+    },
+    "recall_at_5_query_counts": {
+      "improved": 30,
+      "tied": 259,
+      "worsened": 11
+    },
+    "claims_without_judged_candidate": 32,
+    "mean_distinct_parents": "35.3",
+    "candidate_oracle_recall_at_5": "88.63%",
+    "query_examples": {
+      "promoted": {
+        "query_id": "5",
+        "judged_relevant_documents": [
+          "13734012"
+        ],
+        "vector_pool_first_relevant_parent_rank": 8,
+        "baseline_top5_first_relevant_rank": null,
+        "reranked_top5_first_relevant_rank": 1,
+        "baseline_ms": "14.8",
+        "reranked_ms": "1530.0"
+      },
+      "demoted": {
+        "query_id": "535",
+        "judged_relevant_documents": [
+          "39368721"
+        ],
+        "vector_pool_first_relevant_parent_rank": 1,
+        "baseline_top5_first_relevant_rank": 1,
+        "reranked_top5_first_relevant_rank": null,
+        "baseline_ms": "15.0",
+        "reranked_ms": "1466.8"
+      },
+      "pool_miss": {
+        "query_id": "132",
+        "judged_relevant_documents": [
+          "7975937"
+        ],
+        "vector_pool_first_relevant_parent_rank": null,
+        "baseline_top5_first_relevant_rank": null,
+        "reranked_top5_first_relevant_rank": null,
+        "baseline_ms": "14.9",
+        "reranked_ms": "1656.8"
+      }
+    }
+  },
+  "chunk_comparison": {
+    "baseline": {
+      "window_tokens": 192,
+      "stride_tokens": 160,
+      "chunks": 12434,
+      "embedding_matrix_mib": "18.21",
+      "pool_recall": "88.63%",
+      "mrr_at_5": "61.05%",
+      "recall_at_5": "73.07%"
+    },
+    "alternative": {
+      "window_tokens": 96,
+      "stride_tokens": 64,
+      "chunks": 27090,
+      "embedding_matrix_mib": "39.68",
+      "pool_recall": "89.70%",
+      "mrr_at_5": "61.78%",
+      "recall_at_5": "74.47%"
+    },
+    "change": {
+      "chunks": 14656,
+      "embedding_matrix_mib": "+21.47",
+      "pool_recall": "+1.07 pp",
+      "mrr_at_5": "+0.73 pp",
+      "recall_at_5": "+1.40 pp"
+    }
+  }
+}

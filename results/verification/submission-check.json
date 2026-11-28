@@ -1,0 +1,81 @@
+{
+  "ready": false,
+  "checks": [
+    {
+      "name": "README.md",
+      "passed": true,
+      "detail": "Required nonempty deliverable"
+    },
+    {
+      "name": "REPORT.md",
+      "passed": true,
+      "detail": "Required nonempty deliverable"
+    },
+    {
+      "name": "slides.pdf",
+      "passed": true,
+      "detail": "Required nonempty deliverable"
+    },
+    {
+      "name": "TALK.md",
+      "passed": true,
+      "detail": "Required nonempty deliverable"
+    },
+    {
+      "name": "AI-LOG.md",
+      "passed": true,
+      "detail": "Required nonempty deliverable"
+    },
+    {
+      "name": "SELF_ASSESSMENT_REPORT.md",
+      "passed": true,
+      "detail": "Required nonempty deliverable"
+    },
+    {
+      "name": "report_repository",
+      "passed": false,
+      "detail": "First line must be the actual public GitHub repository URL; public access must also be checked manually"
+    },
+    {
+      "name": "recording_link",
+      "passed": false,
+      "detail": "TALK.md needs a labeled Recording URL. Manually verify playback, duration, speakers and signed-out access."
+    },
+    {
+      "name": "slides_pdf_format",
+      "passed": true,
+      "detail": "Exported slides must be a PDF"
+    },
+    {
+      "name": "git_history",
+      "passed": true,
+      "detail": "Submission archive must include .git and actual commit history"
+    },
+    {
+      "name": "five_real_runs",
+      "passed": true,
+      "detail": "results/20261121T122915162545Z"
+    },
+    {
+      "name": "self_assessment_total",
+      "passed": true,
+      "detail": "Use the template table, score all six criteria with evidence, and match the explicit claimed total out of 100"
+    },
+    {
+      "name": "self_assessment_submitters",
+      "passed": true,
+      "detail": "List each registered student ID and full name in the Submitted by section"
+    },
+    {
+      "name": "self_assessment_unfinished",
+      "passed": true,
+      "detail": "Include a response under What I did not manage"
+    },
+    {
+      "name": "self_assessment_reflection",
+      "passed": true,
+      "detail": "Include a response under What I would do differently"
+    }
+  ],
+  "claimed_score": 82
+}

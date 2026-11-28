@@ -1,0 +1,368 @@
+{
+  "fixture_only": false,
+  "pilot": false,
+  "run_count": 5,
+  "runs": [
+    {
+      "baseline": {
+        "recall_at_5": 0.7307222222222223,
+        "mrr_at_5": 0.6105,
+        "p50_ms": 29.5096355,
+        "p95_ms": 116.04203715000001
+      },
+      "reranked": {
+        "recall_at_5": 0.7771666666666667,
+        "mrr_at_5": 0.672,
+        "p50_ms": 1631.580148,
+        "p95_ms": 2038.106665
+      },
+      "added_latency": {
+        "p50_ms": 1568.6634925,
+        "p95_ms": 1964.3363873
+      },
+      "quality_delta": {
+        "mrr_at_5": 0.0615,
+        "recall_at_5": 0.04644444444444445
+      },
+      "mrr_at_5_query_counts": {
+        "improved": 67,
+        "tied": 193,
+        "worsened": 40
+      },
+      "recall_at_5_query_counts": {
+        "improved": 30,
+        "tied": 259,
+        "worsened": 11
+      },
+      "candidate_pool": {
+        "oracle_recall_at_5": 0.8863333333333333,
+        "queries_with_no_positive": 32,
+        "mean_distinct_parents": 35.32,
+        "queries_below_five_parents": 0
+      }
+    },
+    {
+      "baseline": {
+        "recall_at_5": 0.7307222222222223,
+        "mrr_at_5": 0.6105,
+        "p50_ms": 33.101442,
+        "p95_ms": 115.76661800000001
+      },
+      "reranked": {
+        "recall_at_5": 0.7771666666666667,
+        "mrr_at_5": 0.672,
+        "p50_ms": 1687.2190525,
+        "p95_ms": 2109.7296998
+      },
+      "added_latency": {
+        "p50_ms": 1636.6787205,
+        "p95_ms": 2049.3796813999998
+      },
+      "quality_delta": {
+        "mrr_at_5": 0.0615,
+        "recall_at_5": 0.04644444444444445
+      },
+      "mrr_at_5_query_counts": {
+        "improved": 67,
+        "tied": 193,
+        "worsened": 40
+      },
+      "recall_at_5_query_counts": {
+        "improved": 30,
+        "tied": 259,
+        "worsened": 11
+      },
+      "candidate_pool": {
+        "oracle_recall_at_5": 0.8863333333333333,
+        "queries_with_no_positive": 32,
+        "mean_distinct_parents": 35.32,
+        "queries_below_five_parents": 0
+      }
+    },
+    {
+      "baseline": {
+        "recall_at_5": 0.7307222222222223,
+        "mrr_at_5": 0.6105,
+        "p50_ms": 27.646676999999997,
+        "p95_ms": 115.73713020000001
+      },
+      "reranked": {
+        "recall_at_5": 0.7771666666666667,
+        "mrr_at_5": 0.672,
+        "p50_ms": 1554.3799595,
+        "p95_ms": 2000.9652607
+      },
+      "added_latency": {
+        "p50_ms": 1511.0221315,
+        "p95_ms": 1928.3262641000001
+      },
+      "quality_delta": {
+        "mrr_at_5": 0.0615,
+        "recall_at_5": 0.04644444444444445
+      },
+      "mrr_at_5_query_counts": {
+        "improved": 67,
+        "tied": 193,
+        "worsened": 40
+      },
+      "recall_at_5_query_counts": {
+        "improved": 30,
+        "tied": 259,
+        "worsened": 11
+      },
+      "candidate_pool": {
+        "oracle_recall_at_5": 0.8863333333333333,
+        "queries_with_no_positive": 32,
+        "mean_distinct_parents": 35.32,
+        "queries_below_five_parents": 0
+      }
+    },
+    {
+      "baseline": {
+        "recall_at_5": 0.7307222222222223,
+        "mrr_at_5": 0.6105,
+        "p50_ms": 27.0454745,
+        "p95_ms": 115.4321304
+      },
+      "reranked": {
+        "recall_at_5": 0.7771666666666667,
+        "mrr_at_5": 0.672,
+        "p50_ms": 1518.867671,
+        "p95_ms": 1725.5707657
+      },
+      "added_latency": {
+        "p50_ms": 1469.510717,
+        "p95_ms": 1649.69758415
+      },
+      "quality_delta": {
+        "mrr_at_5": 0.0615,
+        "recall_at_5": 0.04644444444444445
+      },
+      "mrr_at_5_query_counts": {
+        "improved": 67,
+        "tied": 193,
+        "worsened": 40
+      },
+      "recall_at_5_query_counts": {
+        "improved": 30,
+        "tied": 259,
+        "worsened": 11
+      },
+      "candidate_pool": {
+        "oracle_recall_at_5": 0.8863333333333333,
+        "queries_with_no_positive": 32,
+        "mean_distinct_parents": 35.32,
+        "queries_below_five_parents": 0
+      }
+    },
+    {
+      "baseline": {
+        "recall_at_5": 0.7307222222222223,
+        "mrr_at_5": 0.6105,
+        "p50_ms": 26.1898815,
+        "p95_ms": 115.5414267
+      },
+      "reranked": {
+        "recall_at_5": 0.7771666666666667,
+        "mrr_at_5": 0.672,
+        "p50_ms": 1528.0717625000002,
+        "p95_ms": 1853.2989471000005
+      },
+      "added_latency": {
+        "p50_ms": 1476.018575,
+        "p95_ms": 1798.0767700999997
+      },
+      "quality_delta": {
+        "mrr_at_5": 0.0615,
+        "recall_at_5": 0.04644444444444445
+      },
+      "mrr_at_5_query_counts": {
+        "improved": 67,
+        "tied": 193,
+        "worsened": 40
+      },
+      "recall_at_5_query_counts": {
+        "improved": 30,
+        "tied": 259,
+        "worsened": 11
+      },
+      "candidate_pool": {
+        "oracle_recall_at_5": 0.8863333333333333,
+        "queries_with_no_positive": 32,
+        "mean_distinct_parents": 35.32,
+        "queries_below_five_parents": 0
+      }
+    }
+  ],
+  "across_runs": {
+    "baseline": {
+      "recall_at_5": {
+        "median": 0.7307222222222223,
+        "min": 0.7307222222222223,
+        "max": 0.7307222222222223,
+        "q25": 0.7307222222222223,
+        "q75": 0.7307222222222223
+      },
+      "mrr_at_5": {
+        "median": 0.6105,
+        "min": 0.6105,
+        "max": 0.6105,
+        "q25": 0.6105,
+        "q75": 0.6105
+      },
+      "p50_ms": {
+        "median": 27.646676999999997,
+        "min": 26.1898815,
+        "max": 33.101442,
+        "q25": 27.0454745,
+        "q75": 29.5096355
+      },
+      "p95_ms": {
+        "median": 115.73713020000001,
+        "min": 115.4321304,
+        "max": 116.04203715000001,
+        "q25": 115.5414267,
+        "q75": 115.76661800000001
+      }
+    },
+    "reranked": {
+      "recall_at_5": {
+        "median": 0.7771666666666667,
+        "min": 0.7771666666666667,
+        "max": 0.7771666666666667,
+        "q25": 0.7771666666666667,
+        "q75": 0.7771666666666667
+      },
+      "mrr_at_5": {
+        "median": 0.672,
+        "min": 0.672,
+        "max": 0.672,
+        "q25": 0.672,
+        "q75": 0.672
+      },
+      "p50_ms": {
+        "median": 1554.3799595,
+        "min": 1518.867671,
+        "max": 1687.2190525,
+        "q25": 1528.0717625000002,
+        "q75": 1631.580148
+      },
+      "p95_ms": {
+        "median": 2000.9652607,
+        "min": 1725.5707657,
+        "max": 2109.7296998,
+        "q25": 1853.2989471000005,
+        "q75": 2038.106665
+      }
+    },
+    "added_latency": {
+      "p50_ms": {
+        "median": 1511.0221315,
+        "min": 1469.510717,
+        "max": 1636.6787205,
+        "q25": 1476.018575,
+        "q75": 1568.6634925
+      },
+      "p95_ms": {
+        "median": 1928.3262641000001,
+        "min": 1649.69758415,
+        "max": 2049.3796813999998,
+        "q25": 1798.0767700999997,
+        "q75": 1964.3363873
+      }
+    },
+    "quality_delta": {
+      "mrr_at_5": {
+        "median": 0.0615,
+        "min": 0.0615,
+        "max": 0.0615,
+        "q25": 0.0615,
+        "q75": 0.0615
+      },
+      "recall_at_5": {
+        "median": 0.04644444444444445,
+        "min": 0.04644444444444445,
+        "max": 0.04644444444444445,
+        "q25": 0.04644444444444445,
+        "q75": 0.04644444444444445
+      }
+    },
+    "mrr_at_5_query_counts": {
+      "improved": {
+        "median": 67,
+        "min": 67,
+        "max": 67,
+        "q25": 67.0,
+        "q75": 67.0
+      },
+      "tied": {
+        "median": 193,
+        "min": 193,
+        "max": 193,
+        "q25": 193.0,
+        "q75": 193.0
+      },
+      "worsened": {
+        "median": 40,
+        "min": 40,
+        "max": 40,
+        "q25": 40.0,
+        "q75": 40.0
+      }
+    },
+    "recall_at_5_query_counts": {
+      "improved": {
+        "median": 30,
+        "min": 30,
+        "max": 30,
+        "q25": 30.0,
+        "q75": 30.0
+      },
+      "tied": {
+        "median": 259,
+        "min": 259,
+        "max": 259,
+        "q25": 259.0,
+        "q75": 259.0
+      },
+      "worsened": {
+        "median": 11,
+        "min": 11,
+        "max": 11,
+        "q25": 11.0,
+        "q75": 11.0
+      }
+    },
+    "candidate_pool": {
+      "oracle_recall_at_5": {
+        "median": 0.8863333333333333,
+        "min": 0.8863333333333333,
+        "max": 0.8863333333333333,
+        "q25": 0.8863333333333333,
+        "q75": 0.8863333333333333
+      },
+      "queries_with_no_positive": {
+        "median": 32,
+        "min": 32,
+        "max": 32,
+        "q25": 32.0,
+        "q75": 32.0
+      },
+      "mean_distinct_parents": {
+        "median": 35.32,
+        "min": 35.32,
+        "max": 35.32,
+        "q25": 35.32,
+        "q75": 35.32
+      },
+      "queries_below_five_parents": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "q25": 0.0,
+        "q75": 0.0
+      }
+    }
+  },
+  "note": "Timing quantiles use saved per-query latencies. Added latency is paired within each query and run."
+}

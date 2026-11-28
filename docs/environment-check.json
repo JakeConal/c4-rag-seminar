@@ -1,0 +1,22 @@
+{
+  "python": "3.12.3",
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "executable": ".venv/bin/python",
+  "virtual_environment": true,
+  "ensurepip_available": false,
+  "packages": {
+    "torch": "2.8.0+cpu",
+    "sentence-transformers": "5.1.2",
+    "numpy": "2.2.6",
+    "transformers": "4.57.1",
+    "huggingface-hub": "0.36.0",
+    "pyarrow": "21.0.0"
+  },
+  "cpu_tensor": 1.0,
+  "runtime": "CPU dependencies imported successfully",
+  "dns": {
+    "pypi.org": "resolved",
+    "download-r2.pytorch.org": "resolved",
+    "huggingface.co": "resolved"
+  }
+}

@@ -1,0 +1,9 @@
+# Direct dependencies for the Linux x86-64 / CPython 3.12 CPU study.
+# https://download-r2.pytorch.org/whl/cpu/torch-2.8.0%2Bcpu-cp312-cp312-manylinux_2_28_x86_64.whl
+# SHA-256: cb9a8ba8137ab24e36bf1742cb79a1294bd374db570f09fc15a5e1318160db4e
+torch==2.8.0+cpu
+sentence-transformers==5.1.2
+numpy==2.2.6
+transformers==4.57.1
+huggingface-hub==0.36.0
+pyarrow==21.0.0

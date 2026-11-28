@@ -1,0 +1,18 @@
+{
+  "checked_on": "2026-11-22",
+  "pages": {
+    "report.pdf": 3,
+    "slides.pdf": 9
+  },
+  "sha256": {
+    "REPORT.md": "f860569afa8b148dc810e545e9237ed938ecabe3ec3e4931dce1ac0b9278bb4f",
+    "report.pdf": "32186e653e3281ea674e49131e3e6eafe1c51c83db33ef5425a3e1cac6289e32",
+    "slides.pdf": "84106d2f12b9e7c47110b82d8849e4781f7431b2f75962695d8279e2186712c0",
+    "TALK.md": "ce41abead8d1be4ca7e632558a6e6dc7ac04c3fc59c22647691557bcf115d271",
+    "SELF_ASSESSMENT_REPORT.md": "b71016b18918f0ed9e8cd551b85fd8fb8b4b80d56b288effda2d022b6bb570d7"
+  },
+  "remaining": [
+    "report_repository",
+    "recording_link"
+  ]
+}
